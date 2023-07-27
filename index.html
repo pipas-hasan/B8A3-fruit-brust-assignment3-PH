@@ -75,9 +75,9 @@
       </section>
       <!-- banner-section -->
       <section
-        class="max-w-screen-xl h-screen bg-banner-bg bg-no-repeat brightness-50 mx-8 md:mx-14 lg:mx-24 px-8 md:px-16 lg:px-24 py-5 my-10"
+        class="h-250px  lg:max-w-screen-xl lg:h-screen bg-banner-bg bg-no-repeat bg-cover brightness-50 mx-8 md:mx-14 lg:mx-24 px-8 md:px-16 lg:px-24 py-5 my-10"
       >
-        <div class="text-center w-8/12 mx-auto pt-20">
+        <div class="text-center w-8/12 mx-auto pt-20 ">
           <h1 class="text-xl md:text-4xl lg:text-5xl text-white font-extrabold">
             Exotic tastes at your doorstep
           </h1>
@@ -101,7 +101,7 @@
 
       <!-- group-images-section -->
       <section
-        class="w-10/12 h-60 shadow-lg bg-white mx-auto px-8 md:px-16 lg:px-24 py-0 my-10"
+        class="lg:max-w-screen-xl mx-36 absolute h-60 shadow-lg bg-white mt-[-150px] px-8 md:px-16  "
       >
         <div class="group flex gap-14 pt-12">
           <div class="group1 text-center">
@@ -121,7 +121,7 @@
             <p>Strawberry</p>
           </div>
           <div class="group1 text-center">
-            <img src="./images/fruit4.png" alt="" />
+            <img src="./images/fruit1.png" alt="" />
             <p>Mango</p>
           </div>
         </div>
@@ -131,7 +131,7 @@
       <!-- Deal of the day -->
       <!-- md:mx-14 lg:mx-auto  md:px-6 lg:px-4 py-5 my-10 -->
       <section
-        class="lg:w-10/12 mx-auto"
+        class="w-72 lg:w-10/12 mx-auto mt-32"
       >
         <div class="Deal flex py-20">
           <div class="text-content flex-1">
@@ -154,7 +154,7 @@
           </div>
         </div>
         <!-- modal-card- -->
-        <div class="card-section grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-auto lg:grid-cols-4  ">
+        <div class=" mx-auto card-section grid sm:grid-cols-1 md:grid-cols-2 gap-10  lg:grid-cols-4  ">
           <div class="card-one align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
             <img src="./images/fruit6.png" class="mx-auto" alt="" />
             <h3 class="price">12.90$ - 18.85$</h3>
@@ -188,12 +188,56 @@
               />
             </div>
             <div>
-                <button>Details</button>
+              <!-- Open the modal using ID.showModal() method -->
+            <!-- Open the modal using ID.showModal() method -->
+               <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+             <dialog id="my_modal_1" class="modal ">
+  <form method="dialog" class="modal-box w-72">
+     <img src="./images/fruit6.png" class="mx-auto" alt="" />
+     <h3 class="price">12.90$ - 18.85$</h3>
+    <h3 class="font-bold text-lg">Apples!</h3>
+   <div class="rating">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+    <p class="py-4"></p>
+    <div class="modal-action flex justify-start">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn flex-1">Close</button>
+      <button class="btn flex-1">Buy Now</button>
+    </div>
+  </form>
+             </dialog>
+                <!-- Open the modal using ID.showModal() method -->
             </div>
           
           </div>
-          <div class="card-two align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
-            <img src="./images/fruit6.png" class="mx-auto" alt="" />
+         <div class="card-two align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
+            <img src="./images/fruit7.png" class="mx-auto" alt="" />
             <h3 class="price">12.90$ - 18.85$</h3>
             <p>Apples</p>
             <div class="rating">
@@ -225,12 +269,56 @@
               />
             </div>
             <div>
-                <button>Details</button>
+              <!-- Open the modal using ID.showModal() method -->
+            <!-- Open the modal using ID.showModal() method -->
+               <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+             <dialog id="my_modal_1" class="modal w-72">
+  <form method="dialog" class="modal-box">
+     <img src="./images/fruit7.png" class="mx-auto" alt="" />
+     <h3 class="price">12.90$ - 18.85$</h3>
+    <h3 class="font-bold text-lg">Apples!</h3>
+   <div class="rating">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+    <p class="py-4"></p>
+    <div class="modal-action flex justify-start">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn flex-1">Close</button>
+      <button class="btn flex-1">Buy Now</button>
+    </div>
+  </form>
+             </dialog>
+                <!-- Open the modal using ID.showModal() method -->
             </div>
           
           </div>
-          <div class="card-three align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
-            <img src="./images/fruit6.png" class="mx-auto" alt="" />
+         <div class="card-three align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
+            <img src="./images/fruit8.png" class="mx-auto" alt="" />
             <h3 class="price">12.90$ - 18.85$</h3>
             <p>Apples</p>
             <div class="rating">
@@ -262,12 +350,56 @@
               />
             </div>
             <div>
-                <button>Details</button>
+              <!-- Open the modal using ID.showModal() method -->
+            <!-- Open the modal using ID.showModal() method -->
+               <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+             <dialog id="my_modal_1" class="modal w-72">
+  <form method="dialog" class="modal-box">
+     <img src="./images/fruit8.png" class="mx-auto" alt="" />
+     <h3 class="price">12.90$ - 18.85$</h3>
+    <h3 class="font-bold text-lg">Apples!</h3>
+   <div class="rating">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+    <p class="py-4"></p>
+    <div class="modal-action flex justify-start">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn flex-1">Close</button>
+      <button class="btn flex-1">Buy Now</button>
+    </div>
+  </form>
+             </dialog>
+                <!-- Open the modal using ID.showModal() method -->
             </div>
           
           </div>
-          <div class="card-four align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
-            <img src="./images/fruit6.png" class="mx-auto" alt="" />
+         <div class="card-four align-middle text-center w-60 h-80 my-auto pt-8 border-2 shadow-md">
+            <img src="./images/fruit9.png" class="mx-auto" alt="" />
             <h3 class="price">12.90$ - 18.85$</h3>
             <p>Apples</p>
             <div class="rating">
@@ -299,7 +431,51 @@
               />
             </div>
             <div>
-                <button>Details</button>
+              <!-- Open the modal using ID.showModal() method -->
+            <!-- Open the modal using ID.showModal() method -->
+               <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+             <dialog id="my_modal_1" class="modal w-72">
+  <form method="dialog" class="modal-box">
+     <img src="./images/fruit9.png" class="mx-auto" alt="" />
+     <h3 class="price">12.90$ - 18.85$</h3>
+    <h3 class="font-bold text-lg">Apples!</h3>
+   <div class="rating">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+    <p class="py-4"></p>
+    <div class="modal-action flex justify-start">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn flex-1">Close</button>
+      <button class="btn flex-1">Buy Now</button>
+    </div>
+  </form>
+             </dialog>
+                <!-- Open the modal using ID.showModal() method -->
             </div>
           
           </div>
@@ -432,7 +608,7 @@
       <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
             <div class="content-section text-center ">
               <h1 class="text-4xl font-extrabold">Why Choose Us</h1>
-              <p class="py-3 text-sm mx-auto lg:text-xl ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p class="py-3 text-sm mx-auto lg:text-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
                    <div class="start-cont">
