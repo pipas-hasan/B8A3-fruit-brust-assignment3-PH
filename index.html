@@ -34,7 +34,7 @@
             },
             colors: {
               "footer-bg": "#121212",
-              "btn":"#F85559"
+              btn: "#F85559",
             },
           },
         },
@@ -51,15 +51,25 @@
   <body class="font-lato">
     <header>
       <!-- header-section -->
-      <section class="lg:max-w-screen-xl mx-auto h-16 bg-btn px-8 md:px-16 lg:px-24 py-0 my-10">
-          <div>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+      <section
+        class="lg:max-w-screen-xl mx-24 h-20 rounded-full bg-btn px-8 md:px-16 lg:px-8 py-0 my-10"
+      >
+        <div class="grid grid-cols-3">
+          <div class="flex gap-6  justify-start text-center list-none text-white pt-6 flex-1">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Shop</li>
+            <li>All Fruits</li>
           </div>
-          <div></div>
-          <div></div>
+          <div class="logo flex text-center justify-center pt-3 flex-1">
+            <img src="./images/logo.png" class="" alt="" />
+            <h1 class="text-3xl text-white px-3">Fruit Burst</h1>
+          </div>
+          <div class="flex justify-end  h-10 mt-5  cursor-pointer " >
+            <input type="text " class="rounded-full w-64 outline-none"  />
+            <i class="fa fa-search mt-3 ml-[-35px] px-2 "></i>
+          </div>
+        </div>
       </section>
       <!-- banner-section -->
       <section
@@ -67,20 +77,50 @@
       >
         <div class="text-center w-8/12 mx-auto pt-20">
           <h1 class="text-xl md:text-4xl lg:text-5xl text-white font-extrabold">
-           Exotic tastes at your doorstep
+            Exotic tastes at your doorstep
           </h1>
           <p class="text-sm md:text-base lg:text-base text-white py-6">
             We supply highly quality organic products
           </p>
-          <button class="text-white font-extrabold text-xl bg-btn py-2 px-4 rounded">Shop Now</button>
+          <button
+            class="text-white font-extrabold text-xl bg-btn py-2 px-4 rounded"
+          >
+            Shop Now
+          </button>
           <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-4 lg:left-14  right-4 lg:right-14 top-44 lg:top-1/2"
+            class="absolute flex justify-between transform -translate-y-1/2 left-4 lg:left-14 right-4 lg:right-14 top-44 lg:top-1/2"
           >
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
         <!-- team-section -->
+      </section>
+
+      <!-- group-images-section -->
+      <section  class="w-10/12 h-60 shadow-lg bg-white mx-auto px-8   md:px-16 lg:px-24 py-0 my-10">
+          <div class="group flex gap-14 pt-12">
+             <div class="group1 text-center ">
+                <img src="./images/fruit1.png" alt="">
+                <p>Strawberry</p>
+              </div>
+               <div class="group2 text-center">
+                <img src="./images/fruit2.png" alt="">
+                <p>Orange</p>
+              </div>
+               <div class="group3 text-center">
+                <img src="./images/fruit3.png" alt="">
+                <p>Mango</p>
+              </div>
+               <div class="group4 text-center">
+                <img src="./images/fruit4.png" alt="">
+                <p>Strawberry</p>
+              </div>
+              <div class="group1 text-center">
+                <img src="./images/fruit4.png" alt="">
+                <p>Mango</p>
+              </div>
+          </div>
       </section>
     </header>
     <main>
@@ -90,7 +130,7 @@
       ></section>
       <!-- team-section -->
       <section
-        class="max-w-screen-xl h-screen bg-hero-bg bg-no-repeat brightness-50 mx-8 md:mx-14 lg:mx-24 px-8 md:px-16 lg:px-24 py-5 my-10"
+        class="max-w-screen-xl h-screen bg-hero-bg bg-no-repeat bg-cover brightness-50 mx-8 md:mx-14 lg:mx-24 px-8 md:px-16 lg:px-24 py-5 my-10"
       >
         <div class="text-center w-8/12 mx-auto pt-20">
           <h1 class="text-xl md:text-4xl lg:text-5xl text-white font-extrabold">
