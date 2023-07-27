@@ -30,9 +30,11 @@
           extend: {
             backgroundImage: {
               "hero-bg": "url('./images/banner1.png')",
+              "banner-bg": "url('./images/banner3.png')",
             },
             colors: {
               "footer-bg": "#121212",
+              "btn":"#F85559"
             },
           },
         },
@@ -48,39 +50,38 @@
 
   <body class="font-lato">
     <header>
-       <!-- banner-section -->
-        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-0 my-10>
-            <div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" class="btn btn-circle">❮</a> 
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" class="carousel-item relative w-full">
-    <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" class="btn btn-circle">❮</a> 
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" class="carousel-item relative w-full">
-    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" class="btn btn-circle">❮</a> 
-      <a href="#slide4" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" class="carousel-item relative w-full">
-    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" class="btn btn-circle">❮</a> 
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-        </section>
+      <!-- header-section -->
+      <section class="lg:max-w-screen-xl mx-auto h-16 bg-btn px-8 md:px-16 lg:px-24 py-0 my-10">
+          <div>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </div>
+          <div></div>
+          <div></div>
+      </section>
+      <!-- banner-section -->
+      <section
+        class="max-w-screen-xl h-screen bg-banner-bg bg-no-repeat brightness-50 mx-8 md:mx-14 lg:mx-24 px-8 md:px-16 lg:px-24 py-5 my-10"
+      >
+        <div class="text-center w-8/12 mx-auto pt-20">
+          <h1 class="text-xl md:text-4xl lg:text-5xl text-white font-extrabold">
+           Exotic tastes at your doorstep
+          </h1>
+          <p class="text-sm md:text-base lg:text-base text-white py-6">
+            We supply highly quality organic products
+          </p>
+          <button class="text-white font-extrabold text-xl bg-btn py-2 px-4 rounded">Shop Now</button>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-4 lg:left-14  right-4 lg:right-14 top-44 lg:top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- team-section -->
+      </section>
     </header>
     <main>
       <!--  -->
@@ -217,8 +218,13 @@
           <li>Support</li>
           <li>My Account</li>
         </div>
-        <div class="footer-scoal-icon w-64 mx-auto text-white grid grid-cols-3 lg:grid-cols-6 gap-6 mb-4">
-          <i class="fa fa-twitter px-6 text-xs lg:text-base" aria-hidden="true"></i>
+        <div
+          class="footer-scoal-icon w-64 mx-auto text-white grid grid-cols-3 lg:grid-cols-6 gap-6 mb-4"
+        >
+          <i
+            class="fa fa-twitter px-6 text-xs lg:text-base"
+            aria-hidden="true"
+          ></i>
           <i class="fa fa-facebook px-6" aria-hidden="true"></i>
           <i class="fa fa-youtube px-6" aria-hidden="true"></i>
           <i class="fa fa-linkedin px-6" aria-hidden="true"></i>
